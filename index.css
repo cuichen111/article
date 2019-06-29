@@ -1,0 +1,111 @@
+.page1{
+    background:url("image/beijing.png") no-repeat;
+    background-size: cover;
+}
+.page1 > img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    /*设置透明度*/
+    opacity: .2;
+}
+.page1 > img:nth-of-type(2){
+    /*框架中按照375px效果图下  1REM=100PX的比例设定的，为了实现响应式布局开发
+    我们需要把测量出来的尺寸都除以100变为REM*/
+    width: 2.83rem;
+    height: 2.17rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 50%;
+    margin-left: -1.415rem;
+}
+.page1 > img:nth-of-type(3){
+    width: .2rem;
+    height: .32rem;
+    position: absolute;
+    top: 3.2rem;
+    left:.4rem;
+}
+.page1 .jianli{
+    width: .99rem;
+    height: 2.8rem;
+    position: absolute;
+    top: .66rem;
+    left: 50%;
+    margin-left: -.55rem;
+    background: url("image/gerenjianli.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page1 .jianli img{
+    display: block;
+    margin: 0 auto;
+    width: .4rem;
+}
+.page1 .jianli img:nth-of-type(1){
+    margin-top: .15rem;
+}
+.page1 .jianli img:nth-of-type(2){
+    margin-top: .15rem;
+}
+.page1 .personBox{
+    /**/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+.page1 .personBox img:nth-of-type(1){
+    width: .35rem;
+    height: .86rem;
+    margin: 0 .2rem;
+}
+.page1 .personBox img:nth-of-type(2){
+    width: .68rem;
+    height: 1.14rem;
+    margin: 0 .15rem;
+}
+.page1 .personBox img:nth-of-type(3){
+    width: .37rem;
+    height: 1.11rem;
+    margin: 0 .3rem;
+}
+.page1 .personBox img:nth-of-type(4){
+    width: .41rem;
+    height: .77rem;
+    margin: 0 .3rem;
+}
+.page1 .info{
+    position: absolute;
+    bottom:1.8rem ;
+     left: 0;
+    width: 100%;
+}
+.page1 .info p {
+font-size: .18rem;
+        line-height: 2;
+        text-align: center;
+    }
+@media all  and(max-height: 510px){
+    .page1 > img:nth-of-type(2){
+        top: .8rem;
+    }
+    .page1 .jianli{
+        top: .3rem; }
+    .page1 .info{
+        bottom: 1.6rem;
+
+    }
+}
+.AAAAA{
+    animation-name: AAA;
+}
+@keyframes AAA {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
